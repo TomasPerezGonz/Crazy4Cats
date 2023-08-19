@@ -1,7 +1,11 @@
+<div class='ms-4 me-4'>
 <h1><%= @article.title %></h1>
 <p><%= @article.description %></p>
-
+</div>
+<div class='ms-4 me-4'>
 <h2>Comentarios</h2>
 <%= render 'comments/article_comments', comments: @comments %>
-
+</div>
+<div class='ms-5'>
 <%= render 'comments/form', article: @article, comment: @comment %>
+</div>

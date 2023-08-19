@@ -1,0 +1,27 @@
+<div class="ms-5">
+<h1>Nuevo Artículo</h1>
+
+<%= form_with(model: @article, local: true) do |form| %>
+  <div class='mb-4'>
+    <div>
+    <%= form.label :title, "Título" %>
+    </div>
+    <div>
+    <%= form.text_field :title %>
+    </div>
+  </div>
+
+  <div class='mb-4'>
+    <div>
+    <%= form.label :description, "Descripción" %>
+    </div>
+    <div>
+    <%= form.text_area :description %>
+    </div>
+  </div>
+
+  <div>
+    <%= form.submit "Crear Artículo" %>
+  </div>
+<% end %>
+</div>

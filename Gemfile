@@ -75,3 +75,10 @@ end
 gem 'devise'
 
 gem 'faker'
+
+gem 'rails-ujs'
+
+gem 'jquery-rails'
+
+gem 'kaminari'
+

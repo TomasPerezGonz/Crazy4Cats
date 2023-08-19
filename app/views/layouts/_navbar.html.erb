@@ -9,7 +9,7 @@
             <%= link_to 'Nuevo artículo', new_article_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            <%= button_to 'Cerrar Sesión', destroy_user_session_path, method: :delete, class: 'nav-link' %>
           </li>
         <% else %>
           <li class="nav-item">
