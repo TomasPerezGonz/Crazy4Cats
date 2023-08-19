@@ -1,0 +1,8 @@
+<ul>
+  <% comments.each do |comment| %>
+    <li>
+      <%= comment.content %>
+      <p><%= comment.user.name unless comment.anonymous %></p>
+    </li>
+  <% end %>
+</ul>

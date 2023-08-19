@@ -1,0 +1,14 @@
+<%= form_with(model: [article, comment], local: true) do |form| %>
+  <div>
+    <%= form.text_area :content, placeholder: "Añade tu comentario" %>
+  </div>
+
+  <div>
+    <%= form.label :anonymous, "Comentario anónimo?" %>
+    <%= form.check_box :anonymous %>
+  </div>
+
+  <div>
+    <%= form.submit "Comentar" %>
+  </div>
+<% end %>

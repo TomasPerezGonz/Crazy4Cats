@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.description %></p>
+
+<h2>Comentarios</h2>
+<%= render 'comments/article_comments', comments: @comments %>
+
+<%= render 'comments/form', article: @article, comment: @comment %>
